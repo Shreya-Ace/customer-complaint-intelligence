@@ -7,8 +7,6 @@ The system combines traditional NLP techniques with a Large Language Model to id
 ---
 
 ## 👥 Authors
-
-- **Shreyan Dhar**
 - **Shreya Singh**
 
 ---

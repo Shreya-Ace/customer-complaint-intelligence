@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+streamlit
+groq
+python-dotenv
+pydantic
+transformers
+torch
+spacy
+requests
+pytest
+httpx

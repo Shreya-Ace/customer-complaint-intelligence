@@ -1,0 +1,4 @@
+complaint_id,customer_name,product,issue
+1,Alice,Mobile App,App crashes on login
+2,Bob,Internet Service,Slow internet speeds
+3,Charlie,Smart TV,Remote control not responding

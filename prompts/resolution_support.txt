@@ -1,0 +1,44 @@
+Analyze the customer complaint and its structured analysis.
+
+CUSTOMER COMPLAINT:
+{complaint}
+
+STRUCTURED ANALYSIS:
+{analysis}
+
+Generate resolution support containing:
+
+1. A concise summary of the complaint.
+2. A list of practical recommended actions for a customer
+   support agent.
+3. A professional response that can be sent to the customer.
+
+Rules:
+
+- Use ONLY information present in the complaint and structured analysis.
+- Do not invent information.
+- Do not invent order numbers, dates, prices, tracking numbers,
+  policies, compensation, refunds, or delivery estimates.
+- Do not promise a specific response time unless a response time
+  is explicitly provided in the input.
+- Do not claim that an action has already been performed.
+- Do not say "we have checked", "we are investigating", "we have
+  escalated", etc. unless the input explicitly states that this
+  has already happened.
+- Recommended actions should describe what a support agent should do.
+- The suggested response should acknowledge the customer's concern.
+- The suggested response should explain the appropriate next step
+  without making unsupported promises.
+- Keep the customer response professional, concise, and empathetic.
+- Return ONLY valid JSON.
+
+Expected format:
+
+{{
+  "summary": "...",
+  "recommended_actions": [
+    "...",
+    "..."
+  ],
+  "suggested_response": "..."
+}}

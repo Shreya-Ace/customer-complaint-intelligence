@@ -1,0 +1,71 @@
+Analyze the following customer complaint.
+
+COMPLAINT:
+{complaint}
+
+PRE-ANALYZED SENTIMENT:
+{sentiment}
+
+PRE-EXTRACTED ENTITIES:
+{entities}
+
+Classify the complaint using the following categories:
+
+- Delivery
+- Payment
+- Product
+- Refund
+- Account
+- Technical
+- Service
+- Other
+
+Determine:
+
+1. category
+2. intent
+3. sentiment
+4. urgency
+
+Urgency must be exactly one of:
+
+- Low
+- Medium
+- High
+- Critical
+
+Extract or preserve the following entities where available:
+
+- product
+- order_id
+- date
+- amount
+- location
+- organization
+- duration
+
+Rules:
+
+- Use only information present in the complaint.
+- Do not invent missing information.
+- If an entity is unavailable, use null.
+- Choose the most specific reasonable intent.
+- Return ONLY valid JSON.
+
+Expected format:
+
+{{
+  "category": "...",
+  "intent": "...",
+  "sentiment": "...",
+  "urgency": "...",
+  "entities": {{
+    "product": null,
+    "order_id": null,
+    "date": null,
+    "amount": null,
+    "location": null,
+    "organization": null,
+    "duration": null
+  }}
+}}
